@@ -1,0 +1,40 @@
+# Core Django package
+django>=4.2,<5.0  # Use Django 4.x for stability
+
+# PostgreSQL support (replace with appropriate DB driver)
+psycopg2-binary==2.9.6
+
+# Gunicorn for running the app in production
+gunicorn==20.1.0
+
+# Django REST Framework (if building an API)
+djangorestframework==3.14.0
+
+# JWT Authentication for APIs (optional)
+djangorestframework-simplejwt==5.2.2
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# WhiteNoise for serving static files
+whitenoise==6.5.0
+
+# Celery for background tasks (optional)
+celery==5.2.7
+
+# Redis as Celery's message broker (optional)
+redis==4.6.0
+
+# Testing
+pytest-django==4.5.2
+pytest==7.4.0
+
+# Security-related packages (optional)
+django-cors-headers==4.3.0  # To handle Cross-Origin Resource Sharing
+
+requests==2.32.3
+
+azure-ai-translation-text==1.0.1
+azure-cognitiveservices-speech==1.40.0
+
+python-dotenv==1.0.0

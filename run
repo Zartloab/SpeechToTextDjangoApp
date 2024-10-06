@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Stop and remove orphaned containers
+echo "Stopping and removing orphaned Docker containers..."
+docker-compose down --remove-orphans
+
+# Remove dangling images (optional cleanup)
+echo "Removing dangling Docker images..."
+docker image prune -f
+
+# Remove dangling volumes (optional cleanup)
+echo "Removing unused Docker volumes..."
+docker volume prune -f
+
+# Rebuild and bring up containers
+echo "Rebuilding and bringing up Docker containers..."
+docker-compose up --build
