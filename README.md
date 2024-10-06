@@ -4,6 +4,10 @@
 
 This is a Dockerized Django application for speech-to-text functionality. The project can be accessed via the following environments:
 
+access on mobile via:
+
+![QR Code](speechtotext_qrcode.png)
+
 - **Test Environment:** [https://speechtotextdjangoapp-cxd0cmd2bqgxa2cy.australiaeast-01.azurewebsites.net/](https://speechtotextdjangoapp-cxd0cmd2bqgxa2cy.australiaeast-01.azurewebsites.net/)
 - **Local Environment:** [http://localhost:8000//](http://localhost:8000/)
 
@@ -58,11 +62,9 @@ If you prefer to run the application without Docker, follow these steps:
 
 3. **Run the Django server**:
 
-```bash
- python manage.py runserver
-
-
-
+   ```bash
+   python manage.py runserver
+   ```
 
 ## Deployment
 
@@ -70,4 +72,7 @@ This project is configured to be deployed using Docker and can be hosted on plat
 
 For testing purposes, it is currently deployed at:
 [https://speechtotextdjangoapp-cxd0cmd2bqgxa2cy.australiaeast-01.azurewebsites.net/](https://speechtotextdjangoapp-cxd0cmd2bqgxa2cy.australiaeast-01.azurewebsites.net/).
+
+```
+
 ```
